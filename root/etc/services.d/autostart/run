@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bash
 export CUSTOM_PORT=$PORT
-echo "[PORT = $PORT]"
+echo "[CUSTOM_PORT = $PORT]"
 
 # set SUBFOLDER to default if unset
 if [ -z ${SUBFOLDER+x} ]; then
@@ -17,7 +17,7 @@ else
   until \
     $(true &>/dev/null </dev/tcp/localhost/3350) && \
     $(true &>/dev/null </dev/tcp/localhost/4822) && \
-    $(true &>/dev/null </dev/tcp/localhost/${PORT}) &&
+    $(true &>/dev/null </dev/tcp/localhost/${CUSTOM_PORT:=3000}) &&
     $(true &>/dev/null </dev/tcp/localhost/3389)
   do
     sleep .5
@@ -27,6 +27,18 @@ else
   # generate a token based on env vars
   cd /gclient
   TOKEN=$(node maketoken.js)
-  websocat -q -n ws://localhost:${PORT}${SUBFOLDER}guaclite?token=${TOKEN}
+  websocat -q -n ws://localhost:${CUSTOM_PORT:=3000}${SUBFOLDER}guaclite?token=${TOKEN}
   sleep infinity
 fi
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
