@@ -1,6 +1,4 @@
 ARG PORT
 FROM linuxserver/webtop
-USER root
-RUN apk update
-USER abc
+RUN apk update && apk add curl
 ENV CUSTOM_PORT=${PORT}
