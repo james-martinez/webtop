@@ -1,0 +1,6 @@
+#!/usr/bin/with-contenv bash
+export CUSTOM_PORT=$PORT
+
+cd /gclient || exit
+HOME="/config" exec \
+	s6-setuidgid abc node app.js
