@@ -1,3 +1,3 @@
-#!/usr/bin/with-contenv bash
+#!/bin/sh
 
 export CUSTOM_PORT=$PORT
