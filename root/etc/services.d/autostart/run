@@ -15,7 +15,7 @@ else
   until \
     $(true &>/dev/null </dev/tcp/localhost/3350) && \
     $(true &>/dev/null </dev/tcp/localhost/4822) && \
-    $(true &>/dev/null </dev/tcp/localhost/${PORT:=3000}) &&
+    $(true &>/dev/null </dev/tcp/localhost/${PORT}) &&
     $(true &>/dev/null </dev/tcp/localhost/3389)
   do
     sleep .5
@@ -25,6 +25,6 @@ else
   # generate a token based on env vars
   cd /gclient
   TOKEN=$(node maketoken.js)
-  websocat -q -n ws://localhost:${PORT:=3000}${SUBFOLDER}guaclite?token=${TOKEN}
+  websocat -q -n ws://localhost:${PORT}${SUBFOLDER}guaclite?token=${TOKEN}
   sleep infinity
 fi
