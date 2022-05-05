@@ -2,6 +2,7 @@
 export CUSTOM_PORT=$PORT
 
 gen_pass=$(openssl rand -hex 8)
+echo "user = abc"
 echo "password = $gen_pass"
 echo "abc:$gen_pass" | chpasswd
 
