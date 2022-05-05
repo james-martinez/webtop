@@ -18,7 +18,7 @@ This example is for the [linuxserver/webtop](https://github.com/linuxserver/dock
 - A web desktop
 
 ## 💁‍♀️ How to use
-
+- Username: abc , Password will be generated and output will be in the in the deployment log.
 - Use linuxserver/webtop as you would any linux desktop
 - If you would like to use a different distro, change the Dockerfile.
 ``` 
