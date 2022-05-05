@@ -27,5 +27,5 @@ This example is for the [linuxserver/webtop](https://github.com/linuxserver/dock
 ```
 ## 📝 Notes
 
-For linuxserver/webtop questions & feature requests, please visit [gitpod-io/openvscode-server](https://github.com/gitpod-io/openvscode-server).
+For linuxserver/webtop questions & feature requests, please visit [linuxserver/webtop](https://github.com/linuxserver/docker-webtop).
 
