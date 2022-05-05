@@ -20,7 +20,11 @@ This example is for the [linuxserver/webtop](https://github.com/linuxserver/dock
 ## 💁‍♀️ How to use
 
 - Use linuxserver/webtop as you would any linux desktop
-
+- If you would like to use a different distro, change the Dockerfile.
+``` 
+    FROM linuxserver/webtop:ubuntu-xfce
+    FROM linuxserver/webtop
+```
 ## 📝 Notes
 
 For linuxserver/webtop questions & feature requests, please visit [gitpod-io/openvscode-server](https://github.com/gitpod-io/openvscode-server).
