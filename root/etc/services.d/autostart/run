@@ -1,6 +1,5 @@
 #!/usr/bin/with-contenv bash
 export CUSTOM_PORT=$PORT
-echo "[CUSTOM_PORT = $PORT]"
 
 # set SUBFOLDER to default if unset
 if [ -z ${SUBFOLDER+x} ]; then
