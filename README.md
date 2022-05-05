@@ -10,7 +10,7 @@ tags:
 
 # linuxserver/webtop Example
 
-This example is for the [linuxserver/webtop](https://github.com/linuxserver/docker-webtop), a version of Webtop - Alpine, Ubuntu, Fedora, and Arch based containers containing full desktop environments in officially supported flavors accessible via any modern web browser..
+This example is for [linuxserver/webtop](https://github.com/linuxserver/docker-webtop), Webtop - Alpine, Ubuntu, Fedora, and Arch based containers containing full desktop environments in officially supported flavors accessible via any modern web browser..
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/N5dhrv?referralCode=GQzGFh)
 ## ✨ Features
