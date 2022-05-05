@@ -1,8 +1,10 @@
 #!/usr/bin/with-contenv bash
 export CUSTOM_PORT=$PORT
-gen_pass=$(openssl rand -hex 16)
+
+gen_pass=$(openssl rand -hex 8)
 echo "password = $gen_pass"
-echo $gen_pass | passwd abc --stdin
+echo "abc:$gen_pass" | chpasswd
+
 
 cd /gclient || exit
 HOME="/config" exec \
