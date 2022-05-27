@@ -1,7 +1,7 @@
 #!/usr/bin/with-contenv bash
 export CUSTOM_PORT=$PORT
 
-gen_pass=$(openssl rand -hex 8)
+gen_pass=$(openssl rand -hex 4)
 echo "user = abc"
 echo "password = $gen_pass"
 echo "abc:$gen_pass" | chpasswd
